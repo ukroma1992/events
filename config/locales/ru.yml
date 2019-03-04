@@ -1,0 +1,41 @@
+ru:
+  activerecord:
+    models:
+      user:
+        few: "Пользователя"
+        many: "Пользователей"
+        one: "Пользователь"
+        other: "Пользователи"
+      event: 
+        few: "События"
+        many: "Событий"
+        one: "Событие"
+        other: "События"
+    attributes:
+      user:
+        email: "Email"
+        name: "Имя"
+        password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
+      event:
+        title: "Название"
+        address: "Место проведения"
+        datetime: "Дата и Время"
+        description: "Описание"
+  controllers:
+    events:
+      created: "Событие было успешно создано"
+      updated: "Событие было успешно обновлено"
+      destroyed: "Событие было успешно удалено"
+    users:
+      updated: "Юзер был успешно обновлен"
+  errors:
+    messages:
+      not_saved:
+        few: "В вашей форме %{count} ошибки:"
+        many: "В вашей форме %{count} ошибок:"
+        one: "В вашей форме %{count} ошибка:"
+        other: "В вашей форме %{count} ошибок:"
+  app:
+    name: "События"
+    company: "Драч Роман"
