@@ -1,42 +1,64 @@
 ru:
   activerecord:
     models:
-      user:
-        few: "Пользователя"
-        many: "Пользователей"
-        one: "Пользователь"
-        other: "Пользователи"
-      event: 
-        few: "События"
-        many: "Событий"
-        one: "Событие"
-        other: "События"
+      user: 'Пользователь'
+      event: 'Событие'
+      comment: "Комментарий"
     attributes:
       user:
-        email: "Email"
-        name: "Имя"
-        password: "Пароль"
-        password_confirmation: "Подтверждение пароля"
+        email: 'Email'
+        name: 'Имя'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
       event:
-        title: "Название"
-        address: "Место проведения"
-        datetime: "Дата и Время"
-        description: "Описание"
-  controllers:
-    events:
-      created: "Событие было успешно создано"
-      updated: "Событие было успешно обновлено"
-      destroyed: "Событие было успешно удалено"
-    users:
-      updated: "Юзер был успешно обновлен"
+        title: 'Название'
+        address: 'Место проведения'
+        datetime: 'Дата и время'
+        description: 'Описание'
+      comment:
+        user_name: "Имя"
+        body: "Текст комментария"
+  validation:
+      error:
+        one: '%{count} ошибка'
+        few: '%{count} ошибки'
+        many: '%{count} ошибок'
+        other: '%{count} ошибки'
   errors:
+    models:
+      subscription:
+        attributes:
+          user_email:
+            not_available: 'принадлежит зарегистрированному пользователю'
     messages:
       not_saved:
         few: "В вашей форме %{count} ошибки:"
         many: "В вашей форме %{count} ошибок:"
         one: "В вашей форме %{count} ошибка:"
         other: "В вашей форме %{count} ошибок:"
+  controllers:
+    events:
+      created: 'Вы создали новое мероприятие'
+      updated: 'Вы обновили мероприятие'
+      destroyed: 'Вы удалили мероприятие :('
+    users:
+      updated: 'Вы обновили свой профиль'
+    comments:
+      destroyed: 'Комментарий удален'
+      created: 'Ваш комментарий добавлен'
+      error: 'Ошибка с комментарием'
+    subscriptions:
+      created: 'Вы подписаны на это событие'
+      destroyed: 'Участник отписан'
+      error: 'Подписка/отписка не сработала'
   app:
-    name: "События"
-    company: "Драч Роман"
-  are_you_sure: "Вы уверены?"
+    name: 'События'
+    company: 'Драч Роман'
+
+  comments:
+    comment:
+      destroy_confirm: 'Вы уверены, что хотите удалить этот комменатрий?'
+
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
