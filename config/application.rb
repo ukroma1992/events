@@ -31,5 +31,7 @@ module Events
     config.generators.system_tests = nil
 
     config.i18n.default_locale = :ru
+
+    config.serve_static_assets = true
   end
 end
