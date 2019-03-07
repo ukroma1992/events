@@ -4,6 +4,7 @@ ru:
       user: 'Пользователь'
       event: 'Событие'
       comment: "Комментарий"
+      photo: "Фото"
     attributes:
       user:
         email: 'Email'
@@ -19,6 +20,8 @@ ru:
       comment:
         user_name: "Имя"
         body: "Текст комментария"
+      photo:
+        photo: "Фото"
   validation:
       error:
         one: '%{count} ошибка'
@@ -52,6 +55,10 @@ ru:
       created: 'Вы подписаны на это событие'
       destroyed: 'Участник отписан'
       error: 'Подписка/отписка не сработала'
+    photos:
+      created: 'Вы добавили фотографию к событию'
+      destroyed: 'Вы удалили фото'
+      error: 'Что то не так с фоткой'
   app:
     name: 'События'
     company: 'Драч Роман'
