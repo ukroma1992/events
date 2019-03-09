@@ -16,7 +16,7 @@ gem "jquery-rails"
 gem 'devise'
 gem 'devise-i18n'
 gem "russian"
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
 
