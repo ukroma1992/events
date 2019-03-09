@@ -16,9 +16,9 @@ gem "jquery-rails"
 gem 'devise'
 gem 'devise-i18n'
 gem "russian"
-gem 'carrierwave'
-gem 'rmagick'
 gem 'fog-aws'
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+gem 'rmagick'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
