@@ -19,6 +19,7 @@ gem "russian"
 gem 'fog-aws'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'rmagick'
+gem 'geocoder'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

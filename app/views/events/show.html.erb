@@ -28,6 +28,9 @@
             </div>
           <% end %>
         </div>
+        <div class="col-md-6">
+          <div id="map"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -80,3 +83,13 @@
     </div>
   </div>
 </div>
+
+<script>
+  function initMap() {
+    var mymarker = {lat: <%= @event.latitude %>, lng: <%= @event.longitude %>};
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 15, center: mymarker});
+
+    var marker = new google.maps.Marker({position: mymarker, map: map});
+  }
+</script>
