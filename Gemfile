@@ -20,6 +20,7 @@ gem 'fog-aws'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'rmagick'
 gem 'geocoder'
+gem 'lightbox-bootstrap-rails', '5.1.0.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

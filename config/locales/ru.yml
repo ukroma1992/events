@@ -23,6 +23,7 @@ ru:
         body: "Текст комментария"
       photo:
         photo: "Фото"
+
   validation:
       error:
         one: '%{count} ошибка'
@@ -31,6 +32,10 @@ ru:
         other: '%{count} ошибки'
   errors:
     models:
+      photo:
+        attributes:
+          user:
+            required: "Вы должны быть зарегистрированы"
       subscription:
         attributes:
           user_email:
@@ -61,6 +66,7 @@ ru:
       created: 'Вы добавили фотографию к событию'
       destroyed: 'Вы удалили фото'
       error: 'Что то не так с фоткой'
+      destroy_confirm: 'Вы уверены, что хотите удалить это фото?'
   app:
     name: 'События'
     company: 'Драч Роман'
