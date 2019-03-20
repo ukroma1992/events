@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Events" %></title>
-    <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr6HGHocNj1i2v4oYZz64sGcoxlbS9vyQ&callback=initMap">
-    </script>
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <%= csrf_meta_tags %>
   </head>
   <body>
 
